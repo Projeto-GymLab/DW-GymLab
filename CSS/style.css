@@ -115,7 +115,7 @@ button.submit{
 .fazer-login a{
     color: rgb(43, 0, 255);
     font-weight:bolder;
-}
+}s
 
 .parte-restante{
     font-family: Impact, Geneva, Tahoma, sans-serif;
@@ -123,4 +123,22 @@ button.submit{
     margin-left: 100px;
     margin-right: 100px;
     text-align: justify;
+}
+
+/*Exercicios*/
+
+.ex{
+
+}
+
+.itensEx{
+
+}
+
+.info{
+
+}
+
+.verMais{
+
 }
