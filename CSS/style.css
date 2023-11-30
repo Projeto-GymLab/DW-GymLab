@@ -20,11 +20,12 @@ header{
     background-color: whitesmoke;
     position: fixed;
     width: 100vw;
-    height: 82px;
+    height: 72px;
+    z-index: 1000;
 }
 
 .linha-superior{
-    height: 82px;
+    height: 72px;
     background-color: black;
     display: absolute;
 }
@@ -125,4 +126,155 @@ button.submit{
     margin-left: 100px;
     margin-right: 100px;
     text-align: justify;
+}
+
+.texto-suplementos{
+    font-family: Impact, Geneva, Tahoma, sans-serif;
+    margin: 50px;
+    margin-left: 300px;
+    margin-right: 300px;
+    text-align: justify;
+    font-size: 20px;
+}
+
+h1.sup {
+    margin-bottom: 30px;
+}
+
+h3.sup {
+    margin-bottom: 20px;
+}
+
+p.p-sup {
+    margin-bottom: 70px;
+}
+
+h1.h1-sup  {
+    margin-bottom: 100px;
+}
+
+.imgsuplement{
+    height: 250px;
+    width: 600px;
+    border-radius: 15px;
+    z-index: 300px;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+    left: 35%;
+    transform: translate(-50%, -50%);
+    margin-top: 50px;
+}
+
+.menuprincipal {
+    border: none;
+    cursor: pointer;
+    background-color: transparent;
+    
+}
+.submenu {
+    display: inline;
+    position: absolute;
+    border-radius: 15px;
+    padding: 20px;
+    width: 80%;    
+}
+.submenu p {
+    color: white;
+    text-decoration: none;
+    display: block;
+    font-size: 15px;
+    text-align: justify;
+    
+    
+}
+.dropdown:hover .submenu {
+    display: inline;
+    background-color: gray;
+}
+
+.secao-suplementos{
+    display: block;
+}
+
+.secao-exercicios {
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin: 10px;
+    text-align: center;
+    width: 250px;
+    float: left;
+    background-color: #e8e8e8;
+}
+
+/* Estilos para ocultar a lista inicialmente */
+
+body {
+    text-align: center;
+}
+
+
+.lista-membros {
+    display: none;
+    padding: 0;
+}
+.lista-membros li {
+    cursor: pointer;
+    padding: 8px;
+    margin: 4px 0;
+    color: black;
+    text-decoration: none;
+}
+.lista-membros li:hover {
+    background-color: #555; /* Cor de fundo ao passar o mouse */
+}
+
+.lista-membros li.active {
+    background-color: #555; /* Cor de fundo quando selecionado */
+}
+
+.texto-exercicios h1{
+    margin-bottom: 20px;
+}
+
+
+.secao-exercicios img {
+    max-width: 100%;
+    height:  auto;
+}
+
+.secao-exercicios button {
+    background-color: transparent;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 150px;
+    height: 30px;
+    margin-top: 10px;
+    color: #000;
+    transition: all 0.3s ease;
+}
+
+.secao-exercicios button:hover {
+    background-color: #808080; /* Cinza */
+    transform: scale(1.1); /* Aumenta o tamanho em 10% */
+}
+
+.ex{
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+.pex{
+    margin-bottom: 70px;
+}
+
+.txt-ex{
+    font-family: Impact, Geneva, Tahoma, sans-serif;
+    margin: 50px;
+    margin-left: 300px;
+    margin-right: 300px;
+    text-align: justify;
+    font-size: 20px;
 }

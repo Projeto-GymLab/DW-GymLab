@@ -6,7 +6,7 @@
     <title>Gym Lobby</title>
 
     <link rel="stylesheet" href="CSS/style.css">
-    <script href="JS/script.js"></script>
+    <script src="JS/script.js"></script>
 
 </head>
 
@@ -31,21 +31,60 @@
 
     <div class="corpo">
         <div class="banner"></div>
-        <div class="parte-restante">
-            <h1>Titulo Principal</h1>
-            <h3>Subtítulo</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing 
-                elit. Quisque quis augue vitae libero finibus commodo. 
-                Morbi a ante in felis varius tempus id in purus. Mauris 
-                condimentum dolor sed quam accumsan, quis fringilla eros 
-                sagittis. Interdum et malesuada fames ac ante ipsum primis 
-                in faucibus. Morbi eleifend sem vel est malesuada, ac 
-                sagittis felis ornare.</p>
-            
-            <!-- Conteúdo da página -->
-        
+        <div class="txt-ex">
+            <h1 class="ex">Grupos musculares e seus exercícios</h1>
+            <h3 class="ex">Você sabia que a boa execução deve ser sua aliada na hora dos exercícios?</h3>
+            <p class="">O ambiente da academia muitas vezes é permeado por uma atmosfera de objetivos claros: perder peso, ganhar músculos, melhorar o condicionamento físico. Embora essas metas sejam cruciais, a maneira como os exercícios são executados pode ter um impacto significativo no alcance desses objetivos e, mais importante ainda, na saúde e bem-estar geral. A boa execução dos exercícios é mais do que uma formalidade técnica; é a chave para otimizar os resultados e evitar lesões. </p>
         </div>
-    </div>
+
+        <div class="secao-exercicios" id="superiores">
+            <img src="assets/superiores.jpeg" alt="Exercícios Superiores">
+            <h2>Exercícios Superiores</h2>
+            <button onclick="toggleLista('superiores')">Ver Membros</button>
+            <ul class="lista-membros" id="lista-superiores">
+                <li><a href="#" onclick="exibirExercicios('Ombro')">Ombro</a></li>
+                <li><a href="#" onclick="exibirExercicios('Tríceps')">Tríceps</a></li>
+                <li><a href="#" onclick="exibirExercicios('Peito')">Peito</a></li>
+                <li><a href="#" onclick="exibirExercicios('Costas')">Costas</a></li>
+                <li><a href="#" onclick="exibirExercicios('Bíceps')">Bíceps</a></li>
+            </ul>
+            <div id="exercicios-container" style="display: none;">
+                <h3>Exercícios</h3>
+                <ul id="exercicios-list"></ul>
+            </div>
+        </div>
+
+        <div class="secao-exercicios" id="inferiores">
+            <img src="assets/inferiores.jpeg" alt="Exercícios Inferiores">
+            <h2>Exercícios Inferiores</h2>
+            <button onclick="toggleLista('inferiores')">Ver Membros</button>
+            <ul class="lista-membros" id="lista-inferiores">
+                <li><a href="#" onclick="exibirExerciciosInferiores('Posterior de coxa')">Posterior de coxa</a></li>
+                <li><a href="#" onclick="exibirExerciciosInferiores('Panturrilha')">Panturrilha</a></li>
+                <li><a href="#" onclick="exibirExerciciosInferiores('Glúteos')">Glúteos</a></li>
+                <li><a href="#" onclick="exibirExerciciosInferiores('Quadríceps')">Quadríceps</a></li>
+            </ul>
+            <div id="exercicios-container-inferiores" style="display: none;">
+                <h3>Exercícios</h3>
+                <ul id="exercicios-list-inferiores"></ul>
+            </div>
+        </div>
+
+        <div class="secao-exercicios" id="abdominais">
+            <img src="assets/abdominais.jpeg" alt="Exercícios Abdominais">
+            <h2>Exercícios Abdominais</h2>
+            <button onclick="toggleLista('abdominais')">Ver Membros</button>
+            <ul class="lista-membros" id="lista-abdominais">
+                <li><a href="#" onclick="exibirAbdominais('Reto')">Reto</a></li>
+                <li><a href="#" onclick="exibirAbdominais('Infra')">Infra</a></li>
+                <li><a href="#" onclick="exibirAbdominais('Bicicleta')">Bicicleta</a></li>
+                <li><a href="#" onclick="exibirAbdominais('Russian twist')">Russian twist</a></li>
+            </ul>
+            <div id="exercicios-container-inferiores" style="display: none;">
+                <h3>Exercícios</h3>
+                <ul id="exercicios-list-inferiores"></ul>
+            </div>
+        </div>
 </body>
 
 </html>
