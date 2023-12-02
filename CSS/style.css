@@ -1,0 +1,555 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+html {
+    width: 100vw;
+    height: 100vh;
+    font-size: 80%;
+    overflow-x: hidden;
+}
+
+h1,
+h3 {
+    margin-bottom: 20px;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: whitesmoke;
+    position: fixed;
+    width: 100vw;
+    height: 72px;
+    z-index: 1000;
+}
+
+.header-login {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.linha-superior {
+    height: 72px;
+    background-color: black;
+    display: absolute;
+}
+
+.logo {
+    height: 60px;
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-bottom: 3px;
+}
+
+nav ul {
+    width: 700px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.h4-home {
+    justify-content: left;
+}
+
+nav li a {
+    padding: 3rem 2rem 2rem 2rem;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+
+nav li a:hover {
+    background-color: #e8e8e8;
+    border-bottom: 4px solid #2a2a2a;
+    color: #696969;
+    height: 100%;
+    width: 100%;
+    transition: all 300ms ease;
+}
+
+body {
+    background-color: rgb(255, 255, 255);
+}
+
+.banner-home {
+    background-image: url("../assets/bannerHome.jpg");
+    height: 100vh;
+    width: 100vw;
+    background-repeat: round;
+    background-size: cover;
+    background-position: center;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner-calculadoras{
+    background-image: url("../assets/bannerCalc.jpg");
+    height: 100vh;
+    width: 100vw;
+    background-repeat: round;
+    background-size: cover;
+    background-position: center;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h1.boas-vindas {
+    color: white;
+    font-size: 40px;
+}
+
+p.boas-vindas {
+    color: white;
+    margin: 10px;
+}
+
+.btnFazerLogin {
+    padding: 25px;
+    width: 300px;
+    background-color: #1c1c1c;
+    border: 0;
+    border-radius: 15px;
+    font-size: 20px;
+}
+
+.btnCaminho{
+    padding: 25px;
+    width: 300px;
+    background-color: #1c1c1c;
+    border: 0;
+    border-radius: 15px;
+    font-size: 20px;
+    margin: 10px;
+}
+
+.btnCaminho a{
+    text-decoration: none;
+    color: white;
+}
+
+.btnCaminho:hover{
+    background-color: #2a2a2a;
+    color: rgb(222, 222, 222);
+    transition: all 400ms ease-in-out;
+    padding: 28px;
+    width: 310px;
+    font-size: 22px;
+    cursor: pointer;
+}
+
+.btnFazerLogin a {
+    text-decoration: none;
+    color: white;
+}
+
+.btnFazerLogin:hover {
+    background-color: #2a2a2a;
+    color: rgb(222, 222, 222);
+    transition: all 400ms ease-in-out;
+    padding: 30px;
+    width: 330px;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+.banner-Suplement {
+    background-image: url("../assets/bannerSuplementacao.jpg");
+    height: 100vh;
+    width: 100vw;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    text-align: center;
+}
+
+
+.logo-central-suplement {
+    transform: translateY(35%);
+    height: 500px;
+}
+
+.banner-calc {
+    background-image: url("../assets/bannerSuplementacao.jpg");
+    height: 100vh;
+    width: 100vw;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    text-align: center;
+}
+
+.logo-central-calc {
+    transform: translateY(35%);
+    height: 500px;
+}
+
+.parteLogin form {
+    padding: 100px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    margin: 0px;
+    width: 50%;
+    text-align: center;
+}
+
+.parteLogin form input {
+    border: none;
+    height: 30px;
+    border-radius: 5px;
+    width: 150px;
+}
+
+button.submit {
+    margin-top: 30px;
+    border: none;
+    border-radius: 5px;
+    width: 150px;
+    height: 30px;
+    margin-bottom: 10px;
+    background-color: rgba(65, 65, 65, 0.841);
+    color: white;
+}
+
+.login-page {
+    padding-top: 15px;
+}
+
+.fazer-login {
+    font-weight: normal;
+}
+
+.fazer-login a {
+    color: rgb(43, 0, 255);
+    font-weight: bolder;
+}
+
+.parte-restante {
+    font-family: Impact, Geneva, Tahoma, sans-serif;
+    margin: 30px;
+    margin-left: 100px;
+    margin-right: 100px;
+    text-align: justify;
+}
+
+.texto-suplementos {
+    font-family: Impact, Geneva, Tahoma, sans-serif;
+    margin: 50px;
+    margin-left: 300px;
+    margin-right: 300px;
+    text-align: justify;
+    font-size: 20px;
+}
+
+h1.sup {
+    margin-bottom: 30px;
+}
+
+h3.sup {
+    margin-bottom: 20px;
+}
+
+p.p-sup {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-bottom: 70px;
+}
+
+h1.h1-sup {
+    text-align: center;
+}
+
+.secao-suplementos {
+    align-items: center;
+    justify-content: center;
+}
+
+.texto-home {
+    font-family: Impact, Geneva, Tahoma, sans-serif;
+    margin: 50px;
+    margin-left: 300px;
+    margin-right: 300px;
+    text-align: justify;
+    font-size: 20px;
+}
+
+.contato h1 {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.contato {
+    font-family: Impact, Geneva, Tahoma, sans-serif;
+    margin: 50px;
+    margin-left: 300px;
+    margin-right: 300px;
+    text-align: justify;
+    font-size: 20px;
+}
+
+.contato ul li {
+    margin: 30px;
+    list-style: circle;
+    margin-left: 270px;
+}
+
+.contato ul li a{
+    color: #696969;
+}
+
+.contato ul{
+    margin-bottom: 80px;
+}
+
+.dropdown {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    /* Garante que o conteúdo excedente seja oculto durante a animação */
+}
+
+.drop-img {
+    transition: transform 500ms ease-in-out;
+    /* Adiciona uma transição para a propriedade transform */
+    transform: translateX(50%);
+    height: 250px;
+    border-radius: 15px;
+    z-index: 3;
+    position: sticky;
+    order: 1;
+}
+
+.drop-txt {
+    border-radius: 15px;
+    background-color: gray;
+    color: white;
+    height: 220px;
+    width: 720px;
+    padding: 15px;
+    z-index: 2;
+    order: 2;
+    position: sticky;
+    transform: translateX(-50%);
+    transition: transform 500ms ease-in-out;
+    font-size: 18px;
+
+    text-align: justify;
+}
+
+.dropdown:hover .drop-txt {
+    transform: translateX(0);
+}
+
+.dropdown:hover .drop-img {
+    transform: translateX(0);
+}
+
+.mapa {
+    background-color: rgb(225, 225, 225);
+    text-align: center;
+    padding: 50px;
+}
+
+.mapa iframe {
+    border-radius: 25px;
+    border: 0;
+}
+
+.mapa p {
+    font-size: 17px;
+}
+
+footer {
+    background-color: black;
+    color: whitesmoke;
+    padding: 20px;
+    text-align: center;
+    font-size: 20px;
+    position: absolute;
+    width: 100vw;
+}
+
+footer ul li {
+    cursor: pointer;
+    display: inline;
+    margin: 30px;
+}
+
+footer ul li:hover {
+    color: #afaeae;
+}
+
+
+.body-login {
+    background-image: url("../assets/banner3.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.corpo-login {
+    background-color: rgba(65, 65, 65, 0.800);
+    height: 500px;
+    margin: 40px 350px 40px 350px;
+    padding: 50px;
+}
+
+.form-login {
+    color: white;
+    text-align: center;
+    font-size: 18px;
+    padding: 20px;
+}
+
+.form-login hr {
+    margin-bottom: 30px;
+    border: none;
+    background-color: white;
+    height: 1px;
+}
+
+.form-login input {
+    height: 25px;
+    margin: 10px;
+    border: 0;
+    width: 200px;
+    border-radius: 7px;
+    padding: 5px;
+}
+
+.form-login button {
+    padding: 15px;
+    width: 200px;
+    border-radius: 7px;
+    border: none;
+    margin: 20px;
+    background-color: #1c1c1c;
+    color: white;
+    font-weight: bold;
+}
+
+/* CALCULAR IMC ================= */
+
+.corpo-calcImc {
+    background-color: rgba(65, 65, 65, 0.800);
+    height: 500px;
+    margin: 40px 350px 40px 350px;
+    padding: 50px;
+}
+
+.form-calcImc {
+    color: rgb(0, 0, 0);
+    text-align: center;
+    font-size: 18px;
+    padding: 20px;
+}
+
+.form-calcImc hr {
+    margin-bottom: 30px;
+    border: none;
+    background-color: white;
+    height: 1px;
+}
+
+.form-calcImc input {
+    height: 25px;
+    margin: 10px;
+    border: 0;
+    width: 200px;
+    border-radius: 7px;
+    padding: 5px;
+}
+
+.form-calcImc p{
+    margin-bottom: 20px;
+}
+
+.form-calcImc button {
+    padding: 15px;
+    width: 200px;
+    border-radius: 7px;
+    border: none;
+    margin: 20px;
+    background-color: #1c1c1c;
+    color: white;
+    font-weight: bold;
+}
+
+.calc-imc{
+    background-color: #afaeae;
+    padding: 30px;
+    margin: 50px 350px 50px 350px;
+}
+
+/* CALCULAR GASTO CALORIC ================= */
+
+.corpo-gastCal {
+    background-color: rgba(65, 65, 65, 0.800);
+    height: 500px;
+    margin: 40px 350px 40px 350px;
+    padding: 50px;
+}
+
+.form-gastCal {
+    color: rgb(0, 0, 0);
+    text-align: center;
+    font-size: 18px;
+    padding: 20px;
+}
+
+.form-gastCal hr {
+    margin-bottom: 30px;
+    border: none;
+    background-color: white;
+    height: 1px;
+}
+
+.form-gastCal input {
+    height: 25px;
+    margin: 10px;
+    border: 0;
+    width: 200px;
+    border-radius: 7px;
+    padding: 5px;
+}
+
+.form-gastCal p{
+    margin-bottom: 20px;
+}
+
+.btnVoltar a{
+    color: white;
+    text-decoration: none;
+}
+
+.btnIMC {
+    padding: 15px;
+    width: 200px;
+    border-radius: 7px;
+    border: none;
+    margin: 20px;
+    background-color: #1c1c1c;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.form-calcImc{
+    background-color: #afaeae;
+    padding: 30px;
+    margin: 50px 350px 50px 350px;
+    text-align: center;
+}

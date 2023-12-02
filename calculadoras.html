@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Gym Lobby</title>
+
+    <link rel="stylesheet" href="CSS/style.css">
+    <script href="JS/script.js"></script>
+
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <a href="index.html"><img class="logo" src="assets/LogoGymLab.png" alt="Logo Gym Lab"></a>
+        </div>
+
+        <nav>
+            <ul class="nav">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="exercicios.html">Exercícios</a></li>
+                <li><a href="suplement.html">Suplementação</a></li>
+                <li><a href="tabAlimentos.html">Tabela de Alimentos</a></li>
+                <li><a href="calculadoras.html">Calculadoras</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="corpo">
+        <div class="banner-calculadoras">
+            <button class="btnCaminho"><a href="#calc-imc">Calculadora IMC</a></button>
+            <button class="btnCaminho"><a href="#calc-gasto-cal">Calculadora gasto calórico</a></button>
+        </div>
+        <div class="parte-restante">
+            <div class="form-calcImc" id="calc-imc">
+                <form>
+
+                    <h1>Índice de massa corpórea!</h1>
+                    <p>(versão para ambos os sexos)</p>
+                    <hr>
+
+                    <label>Insira sua altura em m:</label><br>
+                    <input type="text" id="inpAlt"><br>
+
+                    <label>Insira seu peso em Kg:</label><br>
+                    <input type="text" id="inpKg"><br>
+
+                </form>
+                <button onclick="calcImc()">Calcular meu IMC</button>
+                <label id="resultImc"></label>
+
+
+            </div>
+            <div class="calc-gasto-cal" id="calc-gasto-cal">
+
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <ul>
+            <li>Iasmim Garcia</li>
+            <li>Maria Luzia de Moura</li>
+            <li>Matheus Garcia</li>
+        </ul>
+
+    </footer>
+</body>
+
+</html>

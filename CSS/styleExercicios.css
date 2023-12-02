@@ -1,0 +1,320 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    list-style: none;
+}
+
+html{
+    width: 100vw;
+    height: 100vh;
+    font-size: 80%;
+    overflow-x: hidden;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: whitesmoke;
+    position: fixed;
+    width: 100vw;
+    height: 72px;
+    z-index: 1000;
+}
+
+.linha-superior{
+    height: 72px;
+    background-color: black;
+    display: absolute;
+}
+
+.logo {
+    height: 60px;
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-bottom: 3px;
+}
+
+nav ul{
+    width: 700px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.h4-home {
+    justify-content: left;
+}
+
+nav li a{
+    padding: 3rem 1rem 2rem 1rem;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+
+nav li a:hover{
+    background-color: #e8e8e8;
+    border-bottom: 4px solid #2a2a2a;  
+    color: #696969;
+    height: 100%;
+    width: 100%;
+    transition: all 300ms ease;
+}
+
+body {
+    background-color: rgb(255, 255, 255);
+}
+
+.parteLogin {
+    background-image: url("../assets/bannerPrincipal.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    min-height: 100%;
+}
+
+.banner {
+    background-image: url("../assets/bannerPrincipal.png");
+    height: 30em;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    min-height: 100%;
+}
+
+.parteLogin form{
+    padding: 100px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    margin: 0px;
+    width: 50%;
+    text-align: center;
+}
+
+.parteLogin form input{
+    border: none;
+    height: 30px;
+    border-radius: 5px;
+    width: 150px;
+}
+
+button.submit{
+    margin-top: 30px;
+    border: none;
+    border-radius: 5px;
+    width: 150px;
+    height: 30px;
+    margin-bottom: 10px;
+    background-color: rgba(65, 65, 65, 0.841);
+    color: white;
+}
+
+.fazer-login{
+    font-weight: normal;
+}
+
+.fazer-login a{
+    color: rgb(43, 0, 255);
+    font-weight:bolder;
+}
+
+.parte-restante{
+    font-family: Impact, Geneva, Tahoma, sans-serif;
+    margin: 30px;
+    margin-left: 100px;
+    margin-right: 100px;
+    text-align: justify;
+}
+
+.texto-suplementos{
+    font-family: Impact, Geneva, Tahoma, sans-serif;
+    margin: 50px;
+    margin-left: 300px;
+    margin-right: 300px;
+    text-align: justify;
+    font-size: 20px;
+}
+
+h1.sup {
+    margin-bottom: 30px;
+}
+
+h3.sup {
+    margin-bottom: 20px;
+}
+
+p.p-sup {
+    margin-bottom: 70px;
+}
+
+h1.h1-sup  {
+    margin-bottom: 100px;
+}
+
+.imgsuplement{
+    height: 250px;
+    width: 600px;
+    border-radius: 15px;
+    z-index: 300px;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+    left: 35%;
+    transform: translate(-50%, -50%);
+    margin-top: 50px;
+}
+
+.menuprincipal {
+    border: none;
+    cursor: pointer;
+    background-color: transparent;
+    
+}
+.submenu {
+    display: inline;
+    position: absolute;
+    border-radius: 15px;
+    padding: 20px;
+    width: 80%;    
+}
+.submenu p {
+    color: white;
+    text-decoration: none;
+    display: block;
+    font-size: 15px;
+    text-align: justify;
+}
+
+.secao-exercicios{
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.dropdown:hover .submenu {
+    display: inline;
+    background-color: gray;
+}
+
+.secao-suplementos{
+    display: block;
+}
+
+.secao-exercicios {
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin: 10px;
+    text-align: center;
+    width: 250px;
+    float: left;
+    background-color: #e8e8e8;
+}
+
+/* Estilos para ocultar a lista inicialmente */
+
+body {
+    text-align: center;
+}
+
+
+.lista-membros {
+    display: none;
+    padding: 0;
+}
+.lista-membros li {
+    cursor: pointer;
+    padding: 8px;
+    margin: 4px 0;
+    color: black;
+    text-decoration: none;
+}
+.lista-membros li:hover {
+    background-color: #555; /* Cor de fundo ao passar o mouse */
+}
+
+.lista-membros li.active {
+    background-color: #555; /* Cor de fundo quando selecionado */
+}
+
+.texto-exercicios h1{
+    margin-bottom: 20px;
+}
+
+
+.secao-exercicios img {
+    max-width: 100%;
+    height:  auto;
+}
+
+.secao-exercicios button {
+    background-color: transparent;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 150px;
+    height: 30px;
+    margin-top: 10px;
+    color: #000;
+    transition: all 0.3s ease;
+}
+
+.secao-exercicios button:hover {
+    background-color: #808080; /* Cinza */
+    transform: scale(1.1); /* Aumenta o tamanho em 10% */
+}
+
+footer {
+    background-color: black;
+    color: whitesmoke;
+    padding: 20px;
+    text-align: center;
+    font-size: 20px;
+    position: absolute;
+    width: 100vw;
+}
+
+footer ul li {
+    cursor: pointer;
+    display: inline;
+    margin: 30px;
+}
+
+footer ul li:hover {
+    color: #afaeae;
+}
+
+.banner-Exercicios{
+    background-image: url("../assets/bannerExercicios.jpg");
+    height: 100vh;
+    width: 100vw;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    text-align: center;
+}
+
+.logo-central-exerc {
+    transform: translateY(35%);
+    height: 500px;
+}
+
+.ex{
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+.pex{
+    margin-bottom: 70px;
+}
+
+.txt-ex{
+    font-family: Impact, Geneva, Tahoma, sans-serif;
+    margin: 50px;
+    margin-left: 300px;
+    margin-right: 300px;
+    text-align: justify;
+    font-size: 20px;
+}
