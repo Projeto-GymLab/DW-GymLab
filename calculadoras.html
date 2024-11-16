@@ -10,12 +10,12 @@
 
 </head>
 
-<body>
+<body>    
     <header>
         <div class="logo">
             <a href="index.html"><img class="logo" src="assets/LogoGymLab.png" alt="Logo Gym Lab"></a>
         </div>
-
+        
         <nav>
             <ul class="nav">
                 <li><a href="index.html">Home</a></li>
@@ -26,46 +26,50 @@
             </ul>
         </nav>
     </header>
-
+    
     <div class="corpo">
         <div class="banner-calculadoras">
             <button class="btnCaminho"><a href="#calc-imc">Calculadora IMC</a></button>
             <button class="btnCaminho"><a href="#calc-gasto-cal">Calculadora gasto calórico</a></button>
         </div>
         <div class="parte-restante">
-            <div class="form-calcImc" id="calc-imc">
-                <form>
+            
+            <div class="texto-imc">
+                <h1 class="imc">IMC</h1>
+                <h3 class="imc">Índice de Massa Corporal</h3>
+                <p class="p-imc">É uma medida que avalia se uma pessoa está com peso adequado em relação à sua altura. 
+                    Foi desenvolvido pelo matemático belga Adolphe Quetelet no século XIX e é amplamente utilizado por profissionais 
+                    de saúde em todo o mundo como um indicador simples e prático para categorizar indivíduos em diferentes faixas de peso, 
+                    como abaixo do peso, peso normal, sobrepeso e obesidade.
+                </p>
+                <h1 class="imc">Gasto Calórico</h1>
+                <p class="p-imc">O gasto calórico, ou gasto energético, refere-se à quantidade de calorias que uma pessoa queima em um 
+                    determinado período, geralmente em um dia. Esse gasto é resultado de diversas atividades e processos corporais que 
+                    requerem energia para serem realizados, desde funções básicas como respirar e manter a temperatura corporal até atividades 
+                    físicas intensas.
+                </p>
+                <h1 class="h1-imc">Calculadoras:</h1>
+            </div>
 
+            <div class="form-calcImc" id="calc-imc">
                     <h1>Índice de massa corpórea!</h1>
                     <p>(versão para ambos os sexos)</p>
                     <hr>
 
                     <label>Insira sua altura em m:</label><br>
                     <input type="text" id="inpAlt"><br>
-
+                    
                     <label>Insira seu peso em Kg:</label><br>
                     <input type="text" id="inpKg"><br>
 
-                </form>
-                <button onclick="calcImc()">Calcular meu IMC</button>
+                <button id="btnIMC" onclick="calcImc()">Calcular meu IMC</button>
                 <label id="resultImc"></label>
-
-
             </div>
             <div class="calc-gasto-cal" id="calc-gasto-cal">
 
             </div>
         </div>
     </div>
-
-    <footer>
-        <ul>
-            <li>Iasmim Garcia</li>
-            <li>Maria Luzia de Moura</li>
-            <li>Matheus Garcia</li>
-        </ul>
-
-    </footer>
 </body>
 
 </html>

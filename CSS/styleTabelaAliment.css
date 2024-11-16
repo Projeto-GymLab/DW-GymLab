@@ -26,11 +26,18 @@ header {
     width: 100vw;
     height: 72px;
     z-index: 1000;
+    font-size: 20px;
+}
+
+.header-login {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
 }
 
 .linha-superior {
-    height: 72px;
-    background-color: black;
+    height: 70px;
+    background-color: rgba(0, 0, 0, 0);
     display: absolute;
 }
 
@@ -42,7 +49,7 @@ header {
 }
 
 nav ul {
-    width: 700px;
+    min-width: auto;
     display: flex;
     justify-content: space-between;
 }
@@ -52,18 +59,17 @@ nav ul {
 }
 
 nav li a {
-    padding: 3rem 2rem 2rem 2rem;
+    padding: 25px 25px 20px 25px;
     text-decoration: none;
     color: rgb(0, 0, 0);
+    transition: all 300ms;
 }
 
 nav li a:hover {
     background-color: #e8e8e8;
-    border-bottom: 4px solid #2a2a2a;
+    border-bottom: 3px solid #2a2a2a;
     color: #696969;
-    height: 100%;
-    width: 100%;
-    transition: all 300ms ease;
+    font-size: 21px;
 }
 
 body {
@@ -293,10 +299,16 @@ h1.h1-sup {
     background-image:url("../assets/tabalimentos-background.jpg");
     margin: 0;
     padding: 0;
-    background-size: cover;
+    background-size: 100%;
     background-position: center;
     background-color: #f2f2f2;
-    
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    transition: 2s;
+}
+
+.bodytab-alimentos:hover {
+    background-size: 110%;
 }
 
 .corpo-alimentos {
@@ -313,6 +325,7 @@ h1.h1-sup {
     text-align: justify;
     font-size: 20px;
     color: white;
+    box-shadow: #1c1c1ce8;
 }
 
 .corpo-alimentos h1 {

@@ -1,3 +1,15 @@
+
+function abrirMenu(){
+    document.getElementById("nav-vertical").style.transform = "translateX(50%)";
+}
+
+function fecharMenu() {
+    var menu = document.getElementById("nav-vertical");
+    if (menu.style.display === "block") {
+        menu.style.display = "none"; // Mostra o menu
+    }
+};
+
 var userPiloto = "primeirousuario@gmail.com"
 var senhaPiloto = "#MinhaSenha10"
 
@@ -272,6 +284,7 @@ function exibirAbdominais() {
 }
 
 function calcImc(){
+    alert("oie")
     var inpAlt = document.getElementById('inpAlt');
     var inpPeso = document.getElementById('inpKg');
 
@@ -280,11 +293,12 @@ function calcImc(){
 
     var IMC = peso/(altura*altura);
 
-    var res = "Seu IMC é: " + IMC;
-    
-    document.getElementById('resultImc').innerHTML = res;
+    var lblRes = document.getElementById('resultImc');
+    lblRes.value = "Seu IMC é: " + IMC
 }
 
 function calcGastoCal(){
 
 }
+
+
