@@ -6,17 +6,27 @@
     <title>Gym Lobby</title>
 
     <link rel="stylesheet" href="CSS/style.css">
-    <script href="JS/script.js"></script>
+    <script src="JS/script.js"></script>
 
 </head>
 
 <body>
+    <nav class="nav-vertical"  id="nav-vertical">
+        <button  id="btn-menu-fechar" onclick="fecharMenu()"><img src="assets/barra-de-menu.png" alt="fechar" height="50px"></button>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="exercicios.html">Exercícios</a></li>
+            <li><a href="suplement.html">Suplementação</a></li>
+            <li><a href="tabAlimentos.html">Tabela de Alimentos</a></li>
+            <li><a href="calculadoras.html">Calculadoras</a></li>
+        </ul>
+    </nav>
     <header>
         <div class="logo">
             <a href="index.html"><img class="logo" src="assets/LogoGymLab.png" alt="Logo Gym Lab"></a>
         </div>
 
-        <nav>
+        <nav class="nav-horizontal">
             <ul class="nav">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="exercicios.html">Exercícios</a></li>
@@ -25,11 +35,13 @@
                 <li><a href="calculadoras.html">Calculadoras</a></li>
             </ul>
         </nav>
+        <input type="checkbox" style="display: none;" id="btn-menu">
+        <button onclick="abrirMenu()" id="btn-menu"><img src="assets/barra-de-menu.png" alt="menu"></button>
     </header>
 
     <div class="corpo">
-        <div class="banner-Suplement">
-            <img src="assets/LogoSuplement.png" alt="logo suplementação" class="logo-central-suplement">
+        <div class="banner-suplementos banners-principais">
+            <img src="assets/LogoSuplement.png" alt="logo suplementação" class="logo-central-suplement logos-centrais">
         </div>
         <div class="texto-suplementos">
             <h1 class="sup">Suplementos</h1>

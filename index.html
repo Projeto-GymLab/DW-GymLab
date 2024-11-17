@@ -1,103 +1,132 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
-<head>
-    <meta charset="UTF-8">
+  <head>
+    <meta charset="UTF-8" />
     <title>Gym Lobby</title>
 
-    <link rel="stylesheet" href="CSS/style.css">
-    <script href="JS/script.js"></script>
-</head>
+    <link rel="stylesheet" href="CSS/style.css" />
+    <script src="JS/script.js"></script>
+  </head>
 
-<body>
-    <nav class="nav-vertical"  id="nav-vertical">
-        <!--<button  id="btn-menu-fechar" onclick="fecharMenu()"><img src="assets/barra-de-menu.png" alt="fechar" height="50px"></button>-->
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="exercicios.html">Exercícios</a></li>
-            <li><a href="suplement.html">Suplementação</a></li>
-            <li><a href="tabAlimentos.html">Tabela de Alimentos</a></li>
-            <li><a href="calculadoras.html">Calculadoras</a></li>
-        </ul>
+  <body>
+    <nav class="nav-vertical" id="nav-vertical">
+      <button id="btn-menu-fechar" onclick="fecharMenu()">
+        <img src="assets/barra-de-menu.png" alt="fechar" height="50px" />
+      </button>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="exercicios.html">Exercícios</a></li>
+        <li><a href="suplement.html">Suplementação</a></li>
+        <li><a href="tabAlimentos.html">Tabela de Alimentos</a></li>
+        <li><a href="calculadoras.html">Calculadoras</a></li>
+      </ul>
     </nav>
     <header>
-        <div class="logo">
-            <a href="index.html"><img class="logo" src="assets/LogoGymLab.png" alt="Logo Gym Lab"></a>
-        </div>
+      <div class="logo">
+        <a href="index.html"
+          ><img class="logo" src="assets/LogoGymLab.png" alt="Logo Gym Lab"
+        /></a>
+      </div>
 
-        <nav class="nav-horizontal">
-            <ul class="nav">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="exercicios.html">Exercícios</a></li>
-                <li><a href="suplement.html">Suplementação</a></li>
-                <li><a href="tabAlimentos.html">Tabela de Alimentos</a></li>
-                <li><a href="calculadoras.html">Calculadoras</a></li>
-            </ul>
-        </nav>
-        <input type="checkbox" style="display: none;" id="btn-menu">
-        <button onclick="abrirMenu()" id="btn-menu"><img src="assets/barra-de-menu.png" alt="menu"></button>
+      <nav class="nav-horizontal">
+        <ul class="nav">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="exercicios.html">Exercícios</a></li>
+          <li><a href="suplement.html">Suplementação</a></li>
+          <li><a href="tabAlimentos.html">Tabela de Alimentos</a></li>
+          <li><a href="calculadoras.html">Calculadoras</a></li>
+        </ul>
+      </nav>
+      <button onclick="abrirMenu()" id="btn-menu">
+        <img src="assets/barra-de-menu.png" alt="menu" />
+      </button>
     </header>
 
     <div class="corpo">
+      <div class="banner-home banners-principais">
+        <h1 class="boas-vindas">Bem-Vindo/a ao Gym Lab</h1>
+        <p class="boas-vindas">
+          Faça login para poder agendar uma avaliação em nossa academia!
+        </p>
+        <button class="btnFazerLogin">
+          <a href="login.html">Fazer Login</a>
+        </button>
+      </div>
+      <div class="texto-home">
+        <h1>GYM LAB</h1>
+        <h3>Quem somos</h3>
 
-        <div class="banner-home">
-            <h1 class="boas-vindas">Bem-Vindo/a ao Gym Lab</h1>
-            <p class="boas-vindas">Faça login para poder agendar uma avaliação em nossa academia!</p>
-            <button class="btnFazerLogin"><a href="login.html">Fazer Login</a></button>
-        </div>
-        <div class="texto-home">
-            <h1>GYM LAB</h1>
-            <h3>Quem somos</h3>
-
-            <p>Bem-vindo ao GymLab, o seu destino definitivo para uma
-                jornada fitness completa! Nossa página proporciona diversas funcionalidades e está recheada de
-                informações úteis para seu dia a dia fitnes, contamos com calculadoras de IMC e de gasto calóricos,
-                exemplos de exercícios, exemplos de execução e até com explicações de diferentes tipos de
-                suplementações e quais delas são as melhores pra você!
-                <br><br>
-                Além disso contamos com a nossa academia presencial, ela oferece um ambiente acolhedor e
-                equipamentos de última geração, proporcionando um espaço inspirador para alcançar seus objetivos de
-                condicionamento físico. Com uma
-                equipe de instrutores qualificados, a GymLab oferece programas personalizados, desde rotinas de
-                treinamento avançadas até orientações especializadas em suplementação. Valorizamos a comunidade e
-                promovemos um estilo de vida saudável, unindo apaixonados por fitness em busca de conquistas
-                extraordinárias. Seja você um iniciante ou um atleta experiente, a GymLab é o lugar perfeito para elevar
-                seu desempenho e alcançar um equilíbrio perfeito entre corpo e mente.
-            </p>
-
-        </div>
+        <p>
+          Bem-vindo ao GymLab, o seu destino definitivo para uma jornada fitness
+          completa! Nossa página proporciona diversas funcionalidades e está
+          recheada de informações úteis para seu dia a dia fitnes, contamos com
+          calculadoras de IMC e de gasto calóricos, exemplos de exercícios,
+          exemplos de execução e até com explicações de diferentes tipos de
+          suplementações e quais delas são as melhores pra você! <br /><br />
+          Além disso contamos com a nossa academia presencial, ela oferece um
+          ambiente acolhedor e equipamentos de última geração, proporcionando um
+          espaço inspirador para alcançar seus objetivos de condicionamento
+          físico. Com uma equipe de instrutores qualificados, a GymLab oferece
+          programas personalizados, desde rotinas de treinamento avançadas até
+          orientações especializadas em suplementação. Valorizamos a comunidade
+          e promovemos um estilo de vida saudável, unindo apaixonados por
+          fitness em busca de conquistas extraordinárias. Seja você um iniciante
+          ou um atleta experiente, a GymLab é o lugar perfeito para elevar seu
+          desempenho e alcançar um equilíbrio perfeito entre corpo e mente.
+        </p>
+      </div>
     </div>
     <div class="mapa">
-        <h1>Visite nossa academia presencialmente!</h1>
-        <p>R. Monsenhor João Ivo, 171 - Formiga</p><br>
-        <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d233.62773733923777!2d-45.42720675163276!3d-20.46339423781812!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94b4ee743430cbcb%3A0xea40ae1b372fc2e5!2sR.%20Monsenhor%20Jo%C3%A3o%20Ivo%2C%20171%20-%20Formiga%2C%20MG%2C%2035570-000!5e0!3m2!1spt-BR!2sbr!4v1701343270781!5m2!1spt-BR!2sbr"
-            allowfullscreen="" loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"></iframe>
+      <h1>Visite nossa academia presencialmente!</h1>
+      <p>R. Monsenhor João Ivo, 171 - Formiga</p>
+      <br/>
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d233.62773733923777!2d-45.42720675163276!3d-20.46339423781812!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94b4ee743430cbcb%3A0xea40ae1b372fc2e5!2sR.%20Monsenhor%20Jo%C3%A3o%20Ivo%2C%20171%20-%20Formiga%2C%20MG%2C%2035570-000!5e0!3m2!1spt-BR!2sbr!4v1701343270781!5m2!1spt-BR!2sbr"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+      ></iframe>
     </div>
-    <br>
+    <br />
     <div class="contato">
-        <h1>Entre em contato conosco:</h1>
-        <ul>
-            <li><b>Telefone:</b> <a href="tel:+551178730912">+55 (11) 7873-0912</a></li>
-            <li><b>Celular 1:</b> <a href="tel:+5511900739823">+55 (11) 90073-9823</a></li>
-            <li><b>Celular 2:</b> <a href="tel:+5511943410115">+55 (11) 94341-0115</a></li>
-            <li><b>Email:</b> <a href="academiasGymLab@gmail.com">academiasGymLab@gmail.com</a></li>
-        </ul>
+      <h1>Entre em contato conosco:</h1>
+      <ul>
+        <li>
+          <b>Telefone: <br> </b> <a href="tel:+551178730912">(11) 7873-0912</a>
+        </li>
+        <li>
+          <b>Celular:<br></b> <a href="tel:+5511900739823">(11) 90073-9823</a>
+        </li>
+        <li>
+          <b>Email:<br></b>
+          <a href="academiasGymLab@gmail.com">academiasGymLab@gmail.com</a>
+        </li>
+      </ul>
     </div>
 
     <footer>
-        <ul class="nomes">
-            <li class="nome">Iasmim Garcia</li>
-            <li class="nome">Maria Luzia de Moura</li>
-            <li class="nome">Matheus Garcia</li>
-        </ul>
-        <ul class="redes">        
-            <li><a href="https://www.youtube.com/" class="rede"><img src="assets/instagram.png" alt="instagram"></a></li>
-            <li><a href="https://www.tiktok.com/" class="rede"><img src="assets/tiktok.png" alt="tiktok"></a></li>
-            <li><a href="https://www.youtube.com/" class="rede"><img src="assets/youtube.png" alt="youtube"></a></li>
-        </ul>
+      <ul class="nomes">
+        <li class="nome">Iasmim Garcia</li>
+        <li class="nome">Maria Luzia de Moura</li>
+        <li class="nome">Matheus Garcia</li>
+      </ul>
+      <ul class="redes">
+        <li>
+          <a href="https://www.youtube.com/" class="rede"
+            ><img src="assets/instagram.png" alt="instagram"
+          /></a>
+        </li>
+        <li>
+          <a href="https://www.tiktok.com/" class="rede"
+            ><img src="assets/tiktok.png" alt="tiktok"
+          /></a>
+        </li>
+        <li>
+          <a href="https://www.youtube.com/" class="rede"
+            ><img src="assets/youtube.png" alt="youtube"
+          /></a>
+        </li>
+      </ul>
     </footer>
-</body>
-
+  </body>
 </html>

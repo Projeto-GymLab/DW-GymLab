@@ -60,12 +60,12 @@ nav li a {
     transition: all 300ms;
 }
 
-nav li a:hover {
+.nav-horizontal li a:hover {
     background-color: #e8e8e8;
-    border-bottom: 3px solid #2a2a2a;
+    border-bottom: 4px solid #2a2a2a;
     color: #696969;
     font-size: 21px;
-}
+  }
 
 body {
     background-color: rgb(255, 255, 255);
@@ -195,28 +195,30 @@ h1.h1-sup  {
 }
 
 .secao-exercicios{
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-}
-
-.dropdown:hover .submenu {
-    display: inline;
-    background-color: gray;
+    margin-inline: 300px;
+    height: 50vh;
 }
 
 .secao-suplementos{
     display: block;
 }
 
-.secao-exercicios {
-    border: 1px solid #ccc;
+.card-exercicios {
     padding: 20px;
     margin: 10px;
     text-align: center;
     width: 250px;
     float: left;
-    background-color: #e8e8e8;
+    background-color: #4e495e;
+    color: white;
+    width: 300px;
+    display: absolute;
+}
+
+.secao-exercicios .btn-ver-membros{
+    color: white;
+    border: none;
+    background-color: #00000034;
 }
 
 /* Estilos para ocultar a lista inicialmente */
@@ -249,13 +251,12 @@ body {
     margin-bottom: 20px;
 }
 
-
-.secao-exercicios img {
+.card-exercicios img {
     max-width: 100%;
     height:  auto;
 }
 
-.secao-exercicios button {
+.card-exercicios button {
     background-color: transparent;
     border: 1px solid #ccc;
     border-radius: 5px;
@@ -266,61 +267,29 @@ body {
     transition: all 0.3s ease;
 }
 
-.secao-exercicios button:hover {
-    background-color: #808080; /* Cinza */
+.card-exercicios button:hover {
+    background-color: #8080809d; /* Cinza */
     transform: scale(1.1); /* Aumenta o tamanho em 10% */
 }
 
-footer {
-    background-color: black;
-    color: whitesmoke;
-    padding: 20px;
-    text-align: center;
-    font-size: 20px;
-    position: absolute;
-    width: 100vw;
+.card-exercicios ul li a{
+    color: white ;
 }
 
-footer ul li {
-    cursor: pointer;
-    display: inline;
-    margin: 30px;
-}
-
-footer ul li:hover {
-    color: #afaeae;
-}
-
-.banner-Exercicios{
-    background-image: url("../assets/bannerExercicios.jpg");
-    height: 100vh;
-    width: 100vw;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-
-    text-align: center;
-}
-
-.logo-central-exerc {
-    transform: translateY(35%);
-    height: 500px;
-}
-
-.ex{
+/* .ex{
     margin-top: 20px;
     margin-bottom: 30px;
 }
 
 .pex{
     margin-bottom: 70px;
-}
+} */
 
-.txt-ex{
+/* .txt-ex{
     font-family: Impact, Geneva, Tahoma, sans-serif;
     margin: 50px;
     margin-left: 300px;
     margin-right: 300px;
     text-align: justify;
     font-size: 20px;
-}
+} */
