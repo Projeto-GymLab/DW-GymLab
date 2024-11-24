@@ -65,7 +65,9 @@ Desenvolvido por uma equipe como atividade prática para aplicar conceitos de HT
 Tecnologias Utilizadas:
 
 => HTML5: Estruturação das páginas.
+
 => CSS3: Estilização e responsividade.
+
 => JavaScript: Funcionalidades dinâmicas, como interações de usuário.
 
 
